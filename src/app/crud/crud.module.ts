@@ -8,7 +8,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 
 
 @NgModule({
-  declarations: [ProductListComponent,ProductFormComponent,ProductDetailsComponent],
+  declarations: [],
   imports: [
     CommonModule,
     CRUDRoutingModule
