@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CRUDService } from '../services/crud.service';
 
 @Component({
   selector: 'app-product-form',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './product-form.component.scss'
 })
 export class ProductFormComponent {
+
+  constructor(private crudService: CRUDService) {}
+
+  ngOnit(): void {}
 
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AgGridAngular } from 'ag-grid-angular'; // AG Grid Component
 import { ColDef } from 'ag-grid-community'; // Column Definition Type Interface
+import { CRUDService } from '../services/crud.service';
 @Component({
   selector: 'app-product-list',
   standalone: true,
@@ -22,4 +23,8 @@ export class ProductListComponent {
     { field: 'price' },
     { field: 'electric' },
   ];
+
+  constructor(private crudService: CRUDService) {}
+
+  ngOnit(): void {}
 }
